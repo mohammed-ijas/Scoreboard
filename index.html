@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Football Detail Score Popup</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+
+<body>
+
+  <body>
+    <input id="trigger" type="button" />
+    <div id="match-details-curtain">
+        <div id="match-details-container"> 
+            <div id="title">MATCH STATISTICS</div>
+            <div id="teams-container">
+                <div class="homecomming-team flexbox-items">
+                    <div class="homecomming-team logo"></div>
+                    <br />
+                    <div class="homecomming-team name"></div>
+                </div>
+                <div class="flexbox-items">
+                    <div id="time-of-match"></div>
+                    <div id="date-of-match"></div>
+                    <br />
+                    <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+                </div>
+                <div class="away-team flexbox-items">
+                    <div class="away-team logo"></div>
+                    <br />
+                    <div class="away-team name"></div>
+                </div>
+            </div>
+            <div id="score-container">
+                <div class="homecomming-team score"></div>
+                <div class="away-team score"></div>
+            </div>
+            <hr id="bottom-devider" />
+            </div>
+        
+         <div class="controls">
+    <a href="#" class="button" onClick="stopwatch.start();">Start</a>    
+        <a href="#" class="button" onClick="stopwatch.stop();">Stop</a>
+        <a href="#" class="button" onClick="stopwatch.restart();">Restart</a>
+        <input type="text" name="aws" size="2" oninput="away_score_update(this.value)">
+        <input type="text" name="hms" size="2" oninput="home_score_update(this.value);">
+    </div>   
+    </div>
+
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
